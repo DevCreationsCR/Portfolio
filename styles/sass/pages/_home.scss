@@ -1,0 +1,34 @@
+.accueil{
+    background: url("img/font-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 100vh;
+    min-height: 90rem;
+    width: calc(100% - 30rem);
+    margin-left: auto;
+    position: relative;
+
+    .h1{
+        font-size: 9rem;
+        font-family: "Abril Fatface", sans-serif;
+        margin: 0 6rem;
+        padding-top: 21rem;
+    }
+
+    .txt-animation{
+        font-size: 3rem;
+        margin: 1rem 0 1rem 6rem;
+    }
+
+    .btn-acc{
+        display: inline-flex;
+        width: 20rem;
+        height: 5rem;
+        text-decoration: none;
+        background: $colorNoir;
+    }
+
+
+
+}

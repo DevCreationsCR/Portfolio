@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "mon portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./styles/sass/main.scss ./styles/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CynRim/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CynRim/portfolio/issues"
+  },
+  "homepage": "https://github.com/CynRim/portfolio#readme",
+  "dependencies": {
+    "sass": "^1.26.10"
+  }
+}

@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  /* 1rem = 10px */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #D4E0CE;
+}
+
+.nav-gauche {
+  width: 30rem;
+  height: 100vh;
+  min-height: 80rem;
+  background: #004058;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px dashed #F1F1F1F1;
+  z-index: 5;
+  transition: all 0.2s ease-in-out;
+}
+.nav-gauche .blocs-menu {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-gauche .nav-menu-item {
+  font-size: 1.9rem;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  cursor: pointer;
+}
+.nav-gauche .nav-menu-item a {
+  text-decoration: none;
+  color: #FFF;
+}
+.nav-gauche .nav-menu-item::after {
+  content: "";
+  display: block;
+  width: 0rem;
+  margin: 0.5rem auto 0 auto;
+  height: 0.2rem;
+  border-radius: 0.2rem;
+  background: #FFF;
+  transition: all 0.2s ease-out;
+}
+.nav-gauche .nav-menu-item:hover::after {
+  width: 100%;
+  color: #F1F1F1F1;
+}
+.nav-gauche .blocs-menu:nth-child(1) {
+  width: 100%;
+  height: 25%;
+  background: #004058;
+}
+.nav-gauche .cercle-avatar {
+  margin: 2rem 0;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0.6rem 0.6rem 1.3rem #23798E, -0.6rem -0.6rem 1.3rem #66ACAE;
+}
+.nav-gauche .cercle-avatar img {
+  width: 14rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.nav-gauche .cercle-logo {
+  width: 100%;
+  height: 36%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4rem;
+  cursor: pointer;
+}
+.nav-gauche .cercle-logo img {
+  width: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1300px) {
+  .nav-gauche {
+    left: -30rem !important;
+    width: 25rem;
+    min-height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu-visible {
+    left: 0rem !important;
+  }
+
+  .blocs-menu:nth-child(1) {
+    display: none;
+  }
+
+  .blocs-menu:nth-child(7) {
+    display: none;
+  }
+
+  .btn-rond-menu {
+    width: 7rem;
+    height: 7rem;
+    border: 1px solid #F1F1F1F1;
+    border-radius: 50%;
+    background: #004058;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+  }
+
+  .cont-ligne {
+    width: 3.6rem;
+    height: 3.6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ligne-unique {
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 0.5rem;
+    background: #F1F1F1F1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .ligne-unique::before {
+    content: "";
+    position: absolute;
+    bottom: 1rem;
+    background: #F1F1F1F1;
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 0.5rem;
+  }
+
+  .ligne-unique::after {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    background: #F1F1F1F1;
+    width: 100%;
+    height: 0.4rem;
+    border-radius: 0.5rem;
+  }
+
+  .cont-ligne.active .ligne-unique::after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms ease, transform 300ms 300ms ease;
+  }
+
+  .cont-ligne.active .ligne-unique {
+    background: transparent;
+  }
+
+  .cont-ligne.active .ligne-unique::before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms ease, transform 300ms 300ms ease;
+  }
+}
+.accueil {
+  background: url("img/font-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
+  min-height: 90rem;
+  width: calc(100% - 30rem);
+  margin-left: auto;
+  position: relative;
+}
+.accueil .h1 {
+  font-size: 9rem;
+  font-family: "Abril Fatface", sans-serif;
+  margin: 0 6rem;
+  padding-top: 21rem;
+}
+.accueil .txt-animation {
+  font-size: 3rem;
+  margin: 1rem 0 1rem 6rem;
+}
+.accueil .btn-acc {
+  display: inline-flex;
+  width: 20rem;
+  height: 5rem;
+  text-decoration: none;
+  background: #000;
+}
+
+/*# sourceMappingURL=styles.css.map */
