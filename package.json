@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CynRim/portfolio#readme",
   "dependencies": {
+    "jshint": "^2.12.0",
     "sass": "^1.26.10"
   }
 }

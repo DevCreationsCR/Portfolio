@@ -1,14 +1,13 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
-
 @import "base/base";
-
+@import "components/buttons";
 @import "layout/footer";
+@import "layout/forms";
+@import "layout/header";
 @import "layout/navigation";
-
+@import "pages/contact";
 @import "pages/home";
-@import "pages/menus";
-
 @import "vendors/bootsrap";
 
 

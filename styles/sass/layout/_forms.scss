@@ -1,0 +1,54 @@
+.container-form {
+    margin: 0 auto;
+    width: 70%;
+    padding-left: 30rem;
+}
+.form-groupe {
+    position: relative;
+    display: flex;
+    margin-bottom: 4.5rem;
+}
+.form-groupe label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: $color333;
+    font-size: 2rem;
+    transition: 0.4s ease-out;
+}
+.form-groupe input {
+    display: block;
+    width: 100%;
+    padding: 1rem 0rem;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 0.3rem solid $colorBleu;
+    color: $colorNoir;
+    font-size: 2rem;
+    transition: 0.4s ease-out;
+}
+.form-groupe:nth-child(4) {
+    margin-bottom: 2.5rem;
+    justify-content: flex-start;
+}
+
+.form-groupe .button-sub {
+    display: block;
+    width: auto;
+    padding: 1.5rem 6rem;
+    border: 0.3rem solid $colorBleu;
+    border-radius: 99.9rem;
+    background-image: linear-gradient(to right, transparent 50%, rgb(41, 50, 60) 50%, rgb(72, 85, 99));
+    background-size: 200%;
+    color: $color333;
+    font-size: 2.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.form-groupe .button-sub:hover {
+    color: $colorBlanche;
+    background-position: 100%;
+    border: 0.3rem solid $colorNoir;
+}

@@ -1,0 +1,117 @@
+/*BOUTON DE L'ACCEUIL*/
+.btn-acc{
+    display: inline-flex;
+    width: 20rem;
+    height: 5rem;
+    text-decoration: none;
+    background: $colorNoir;
+    justify-content: center;
+    align-items: center;
+    color: $colorGris;
+    margin: 1rem 0 0 0;
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+.btn-acc1{
+    margin: 1rem 0 0 6rem;
+}  
+.btn-acc2{
+    background: transparent;
+    border: 0.2rem solid $colorNoir;
+    color: $colorNoir;
+    font-weight: 700;
+}
+.btn-rond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 6rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 $color333;
+    background: $color333;
+    animation: pulse 1.3s infinite;
+}
+    @keyframes pulse {
+        to {
+            box-shadow: 0 0 0 0.8rem rgba(255,255,255,0.01);
+        }   
+    }
+.logo-btn-rond-acc {
+    width: 3.5rem;
+}
+@media screen and (max-width: 1000px) {
+    .btn-acc1{
+        margin: 1rem 0 0 3rem;
+    }
+    .btn-rond {
+        display: none;
+    }
+}
+@media screen and (max-width: 700px){
+    .btn-rond-menu{
+        width: 6rem;
+        height: 6rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .btn-acc{
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.3rem;
+        margin: 1rem 0 0 0.5rem;
+    }
+    .btn-acc1{
+        margin: 1rem 0 0 3rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .btn-rond-menu{
+        width: 5rem;
+        height: 5rem;
+    }
+    .btn-acc{
+        width: 10rem;
+        font-size: 1.2rem;
+        height: 3.5rem;
+        margin: 3rem 0 0 0.5rem;
+    }
+}
+/*BOUTON DU PORTFOLIO*/
+
+.btn-projets {
+    display: block;
+    margin: 1rem;
+    width: 18rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $color333;
+    text-decoration: none;
+    border: 1px solid $color333;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-projets::after {
+    content: '';
+    height: 24rem;
+    width: 10rem;
+    background: rgba(255,255,255,0.4);
+    display: block;
+    position: absolute;
+    left: -15rem;
+    top: -5rem;
+    transform: rotate(-45deg)
+}
+.btn-projets:hover::after {
+    transition: transform 0.3s 0.1s linear;
+    transform: translateX(40rem);
+}
