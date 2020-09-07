@@ -111,7 +111,6 @@ body {
 .btn-projets {
   display: block;
   margin: 1rem;
-  width: 18rem;
   height: 5rem;
   line-height: 5rem;
   text-align: center;
@@ -139,7 +138,7 @@ body {
 
 .btn-projets:hover::after {
   transition: transform 0.3s 0.1s linear;
-  transform: translateX(40rem);
+  transform: translateX(60rem);
 }
 
 footer {
@@ -562,7 +561,7 @@ h1 {
 .section-contact h2 {
   text-align: center;
   color: #000;
-  font-size: 4.8rem;
+  font-size: 5.8rem;
   font-weight: 400;
   margin-bottom: 5rem;
   padding: 7rem 0 0 30rem;
@@ -570,6 +569,16 @@ h1 {
 
 .section-contact h2 strong {
   font-weight: 900;
+}
+
+.section-contact h3 {
+  text-align: center;
+  color: #FFF;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 5rem;
+  background-color: #000;
+  border-radius: 50rem;
 }
 
 textarea {
@@ -798,7 +807,7 @@ textarea:focus {
 .item {
   margin: 2rem;
   width: 42rem;
-  height: 40rem;
+  height: 42rem;
   background: #f0f2f0;
   color: #333;
   transition: transform 0.3s ease-out;
@@ -1114,6 +1123,11 @@ textarea:focus {
 .txt-section {
   font-size: 1.6rem;
   text-align: justify;
+}
+
+h4 {
+  font-size: 2rem;
+  font-style: italic;
 }
 
 @media screen and (max-width: 1300px) {
