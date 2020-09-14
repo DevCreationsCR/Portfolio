@@ -571,7 +571,7 @@ h1 {
   font-weight: 900;
 }
 
-.section-contact h3 {
+.mail {
   text-align: center;
   color: #FFF;
   font-size: 3rem;
@@ -579,6 +579,14 @@ h1 {
   margin-bottom: 5rem;
   background-color: #000;
   border-radius: 50rem;
+}
+
+.cv-telecharger {
+  text-align: center;
+  color: #004058;
+  font-size: 5rem;
+  font-weight: 700;
+  padding: 0 5rem 0 5rem;
 }
 
 textarea {
@@ -615,6 +623,31 @@ textarea:focus {
 
   .form-groupe:nth-child(4) {
     justify-content: center;
+  }
+}
+@media screen and (max-width: 570px) {
+  .section-contact h2 {
+    padding: 7rem 0 0 0;
+    font-size: 5rem;
+  }
+
+  .mail {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 520px) {
+  .mail {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mail {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 340px) {
+  .mail {
+    font-size: 1.4rem;
   }
 }
 /*ANIMATION*/
@@ -858,7 +891,7 @@ textarea:focus {
   }
 
   .item {
-    height: 42rem;
+    height: 45rem;
   }
 
   .cont-img-port {
@@ -867,7 +900,7 @@ textarea:focus {
 }
 @media screen and (max-width: 340px) {
   .item {
-    height: 38rem;
+    height: 42rem;
   }
 }
 /*SECTION RANGE/COMPETENCE*/
@@ -1137,20 +1170,28 @@ h4 {
 }
 @media screen and (max-width: 950px) {
   .barre-verticale {
-    height: 120rem;
+    height: 100rem;
+    margin-left: 6rem;
   }
 
+  .bloc {
+    height: 20rem;
+    margin-bottom: 3.75rem;
+  }
+
+  .flex-cont-bloc-exp {
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
   .bloc {
     height: 25rem;
     margin-bottom: 3.75rem;
   }
 
   .barre-verticale {
+    height: 120rem;
     margin-left: 6rem;
-  }
-
-  .flex-cont-bloc-exp {
-    margin-right: 3rem;
   }
 }
 @media screen and (max-width: 520px) {
@@ -1160,17 +1201,29 @@ h4 {
   }
 
   .bloc {
-    height: 40rem;
+    height: 30rem;
+    margin-bottom: 3.75rem;
   }
 
   .barre-verticale {
-    height: 180rem;
+    height: 140rem;
+    margin-left: 6rem;
   }
 }
 @media screen and (max-width: 380px) {
   .txt-section {
     font-size: 1.5rem;
     text-align: justify;
+  }
+
+  .bloc {
+    height: 35rem;
+    margin-bottom: 3.75rem;
+  }
+
+  .barre-verticale {
+    height: 160rem;
+    margin-left: 6rem;
   }
 }
 /* SECTION PARALAX*/
@@ -1187,8 +1240,8 @@ h4 {
 
 .txt-par {
   color: #000;
-  -webkit-text-stroke: 0.1px #FFF;
   font-size: 3.5rem;
+  font-weight: 700;
   margin: 0 5rem;
 }
 
@@ -1218,7 +1271,7 @@ h4 {
   }
 
   .txt-par {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 2rem 0rem;
   }
 }

@@ -14,7 +14,7 @@
     font-weight: 900;
 }
 
-.section-contact h3 {
+.mail {
     text-align: center;
     color: $colorBlanche;
     font-size: 3rem;
@@ -22,6 +22,14 @@
     margin-bottom: 5rem;
     background-color: $colorNoir;
     border-radius: 50rem;
+}
+
+.cv-telecharger {
+    text-align: center;
+    color: $colorBleu;
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 0 5rem 0 5rem;
 }
 textarea {
     width: 100%;
@@ -54,6 +62,30 @@ textarea:focus {
     }
     .form-groupe:nth-child(4){
         justify-content: center;
+    }
+}
+@media screen and (max-width: 570px){
+    .section-contact h2 {
+        padding: 7rem 0 0 0;
+        font-size: 5rem;
+    }
+    .mail{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 520px){
+    .mail{
+        font-size: 1.9rem;
+    }
+}
+@media screen and (max-width: 500px){
+    .mail{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 340px){
+    .mail{
+        font-size: 1.4rem;
     }
 }
 

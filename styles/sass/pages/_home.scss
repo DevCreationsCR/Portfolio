@@ -30,6 +30,7 @@
     flex-shrink: 0;
     padding-left: 20rem;
 }
+
 .pres-gauche{
     width: 60rem;
     flex-shrink: 0;
@@ -202,7 +203,7 @@
             padding: 3rem 0;
         }
         .item {
-            height: 42rem;
+            height: 45rem;
         }
         .cont-img-port {
             height: auto;
@@ -211,7 +212,7 @@
     @media screen and (max-width: 340px) {
 
         .item {
-            height: 38rem;
+            height: 42rem;
         }
     }
 /*SECTION RANGE/COMPETENCE*/
@@ -440,31 +441,42 @@ h4{
         }
     }
     @media screen and (max-width: 950px) {
-
         .barre-verticale {
-            height: 120rem;
+            height: 100rem;
+            margin-left: 6rem;
         }
         .bloc {
-            height: 25rem;
+            height: 20rem;
             margin-bottom: 3.75rem;
-        }
-        .barre-verticale{
-            margin-left: 6rem;
         }
         .flex-cont-bloc-exp {
             margin-right: 3rem;
         }
     }
+
+    @media screen and (max-width: 500px){
+        .bloc {
+            height: 25rem;
+            margin-bottom: 3.75rem;
+        }
+        .barre-verticale {
+            height: 120rem;
+            margin-left: 6rem;
+        }
+    }
+
     @media screen and (max-width: 520px) {
         .txt-section  {
             font-size: 1.6rem;
             text-align: justify;
         }
         .bloc {
-            height: 40rem;
+            height: 30rem;
+            margin-bottom: 3.75rem;
         }
         .barre-verticale {
-            height: 180rem;
+            height: 140rem;
+            margin-left: 6rem;           
         }
     }
 
@@ -473,7 +485,16 @@ h4{
             font-size: 1.5rem;
             text-align: justify;
         }
+        .bloc {
+            height: 35rem;
+            margin-bottom: 3.75rem;
+        }
+        .barre-verticale {
+            height: 160rem;
+            margin-left: 6rem;           
+        }
     }
+
 /* SECTION PARALAX*/
 .section-parallax {
     width: 100%;
@@ -487,8 +508,8 @@ h4{
 }
 .txt-par {
     color: $colorNoir;
-    -webkit-text-stroke: 0.1px $colorBlanche;
     font-size: 3.5rem;
+    font-weight: 700;
     margin: 0 5rem;
 }
 .txt-par:nth-child(1){
@@ -514,7 +535,7 @@ h4{
             flex-direction: column;
         }
         .txt-par {
-            font-size: 2rem;
+            font-size: 2.5rem;
             margin: 2rem 0rem;
         }
     }   
