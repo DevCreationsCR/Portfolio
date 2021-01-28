@@ -35,16 +35,16 @@ typewriter
 .typeString('<strong>, Développeuse <span style="color: #004058;">Full-Stack</span></strong> !')
 .pauseFor(1000)
 .deleteChars(13) //pour effacer les caractères précédents 
-.typeString('<span style="color: #27ae60;"> Sass-CSS</span> !')
+.typeString('<span style="color: #00506e;"> Sass-CSS</span> !')
 .pauseFor(1000)
 .deleteChars(10)
-.typeString('<span style="color: #C60030;"> PhP-Symfony</span> !')
+.typeString('<span style="color: #425b8a;"> PhP-Symfony</span> !')
 .pauseFor(1000)
 .deleteChars(13)
-.typeString('<span style="color: #004C8C;"> NodeJs</span> !')
+.typeString('<span style="color: #00506e;"> À Venir</span> !')
 .pauseFor(1000)
-.deleteChars(8)
-.typeString('<span style="color: #ff6910;"> JavaScript</span> !')
+.deleteChars(10)
+.typeString('<span style="color: #067790;"> JavaScript </span> !')
 .start()
 
 // ANIMATION CONTACT

@@ -579,14 +579,15 @@ h1 {
   margin-bottom: 5rem;
   background-color: #000;
   border-radius: 50rem;
+  text-decoration: none;
 }
 
-.cv-telecharger {
+a.cv-telecharger {
   text-align: center;
   color: #004058;
-  font-size: 5rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  padding: 0 5rem 0 5rem;
+  margin: 180px;
 }
 
 textarea {
