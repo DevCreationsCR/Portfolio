@@ -32,19 +32,19 @@ typewriter
 .changeDelay(20) //vitesse frappe des lettres
 .typeString('Moi c\'est Olivia Remiki')
 .pauseFor(300)
-.typeString('<strong>, Développeuse <span style="color: #004058;">Full-Stack</span></strong> !')
+.typeString('<strong>, Développeuse <span style="color: #004058;">Web et Mobile</span></strong> !')
 .pauseFor(1000)
-.deleteChars(13) //pour effacer les caractères précédents 
-.typeString('<span style="color: #00506e;"> Sass-CSS</span> !')
+.deleteChars(15) //pour effacer les caractères précédents 
+.typeString('<span style="color: #00506e;"> Full-Stack</span> !')
 .pauseFor(1000)
-.deleteChars(10)
-.typeString('<span style="color: #425b8a;"> PhP-Symfony</span> !')
+.deleteChars(12)
+.typeString('<span style="color: #425b8a;"> JS, PHP, CSS et SASS</span> !')
 .pauseFor(1000)
-.deleteChars(13)
-.typeString('<span style="color: #00506e;"> À Venir</span> !')
+.deleteChars(22)
+.typeString('<span style="color: #00506e;"> C# et Xamarin.Forms</span> !')
 .pauseFor(1000)
-.deleteChars(10)
-.typeString('<span style="color: #067790;"> JavaScript </span> !')
+.deleteChars(21)
+.typeString('<span style="color: #067790;"> Web et Mobile</span> !')
 .start()
 
 // ANIMATION CONTACT
