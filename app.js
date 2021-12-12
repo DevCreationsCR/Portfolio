@@ -27,6 +27,7 @@ let typewriter = new Typewriter(txtAnim, {
     deleteSpeed: 20 //vitesse pour effacer les lettres
 })
 
+<<<<<<< HEAD
 typewriter
     .pauseFor(1800) //le temps de l'animation donc 1.8s
     .changeDelay(20) //vitesse frappe des lettres
@@ -46,6 +47,27 @@ typewriter
     .deleteChars(21)
     .typeString('<span style="color: #067790;"> Web et Mobile</span> !')
     .start()
+=======
+typewriter 
+.pauseFor(1800) //le temps de l'animation donc 1.8s
+.changeDelay(20) //vitesse frappe des lettres
+.typeString('Moi c\'est Olivia Remiki')
+.pauseFor(300)
+.typeString('<strong>, Développeuse <span style="color: #004058;">Web et Mobile</span></strong> !')
+.pauseFor(1000)
+.deleteChars(15) //pour effacer les caractères précédents 
+.typeString('<span style="color: #00506e;"> Full-Stack</span> !')
+.pauseFor(1000)
+.deleteChars(12)
+.typeString('<span style="color: #425b8a;"> JS, PHP, CSS et SASS</span> !')
+.pauseFor(1000)
+.deleteChars(22)
+.typeString('<span style="color: #00506e;"> C# et Xamarin.Forms</span> !')
+.pauseFor(1000)
+.deleteChars(21)
+.typeString('<span style="color: #067790;"> Web et Mobile</span> !')
+.start()
+>>>>>>> d9c48455ed3cb3f64a6c31c3fd06654abce7782e
 
 // ANIMATION CONTACT
 const input_fields = document.querySelectorAll('input');
